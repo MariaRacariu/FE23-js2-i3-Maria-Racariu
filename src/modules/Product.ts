@@ -1,11 +1,10 @@
 export class Product {
-    readonly button;
     constructor(
         readonly images: string,
         readonly title: string,
         readonly description: string,
-        readonly rating: string,
-        readonly stock: string,
+        readonly rating: number,
+        readonly stock: number,
         readonly category: string,
     ) {
         this.images = images;
@@ -14,10 +13,12 @@ export class Product {
         this.rating = rating;
         this.stock = stock;
         this.category = category;
-        this.button = this.createButton();
+        this.createButton();
     }
 
-    private createButton() {
-        const button = document.createElement("button");
+    public createButton() {
+        // console.log("Hello")
+        // const button = document.createElement("button");
+        // card.append(button);
     }
 }

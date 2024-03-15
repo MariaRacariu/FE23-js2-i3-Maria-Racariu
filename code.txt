@@ -1,0 +1,43 @@
+// function displayProducts(products: Product[]): void {
+//     const container = document.querySelector('#commentsContainer') as HTMLDivElement;
+//     products.forEach(product => {
+//         createProduct(product, container);
+//     })
+// }
+//
+// function createProduct({ images, title, description, rating, stock, category, createButton }: Product, container: HTMLDivElement): void {
+//     const card = document.createElement('div');
+//     const imagesEl = document.createElement('img');
+//     const titleEl = document.createElement('h1');
+//     const descriptionEl = document.createElement('p');
+//     const ratingEl = document.createElement('p');
+//     const stockEl = document.createElement('p');
+//     const categoryEl = document.createElement('p');
+//     // const buttonEl = document.createElement('button');
+//
+//     imagesEl.src = images[1];
+//     titleEl.innerText = title;
+//     descriptionEl.innerText = description;
+//     ratingEl.innerHTML = rating;
+//     stockEl.innerText = stock;
+//     categoryEl.innerText = category;
+//     // buttonEl.innerText = button;
+//
+//     card.append(imagesEl, titleEl, descriptionEl, ratingEl, stockEl, categoryEl, createButton);
+//     container.append(card);
+// }
+//
+// getProducts().then(displayProducts)
+//
+// const p = new Product();
+
+// readonly images: string,
+// readonly title: string,
+// readonly description: string,
+// readonly rating: number,
+// readonly stock: number,
+// readonly category: string,
+// button
+
+// const product: Product = new Product("yes", "My Product", "Yes", 5, 67, "My product");
+// console.log(product);
