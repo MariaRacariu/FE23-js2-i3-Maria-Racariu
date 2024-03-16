@@ -1,12 +1,13 @@
 import { Product } from "./Product.ts";
 
 export function displayProducts(products): void {
-    const container = document.querySelector('#commentsContainer') as HTMLDivElement;
+    const container = document.querySelector('#productsContainer') as HTMLDivElement;
     products.forEach(item => {
         const productTest = new Product(item.images, item.title, item.description, item.rating, item.stock, item.category);
-        // console.log(productTest);
+        console.log(productTest);
 
         const card = document.createElement('div');
+        card.className = "productCard";
 
         const imagesEl = document.createElement('img');
         const titleEl = document.createElement('h1');

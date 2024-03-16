@@ -1,0 +1,33 @@
+.productsContainer,
+.searchResultContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.productCard {
+    border: solid 1px black;
+    min-width: 350px;
+    min-width: 450px;
+    max-width: 400px;
+    max-height: 500px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.productsContainer>div>img,
+.searchResultContainer>div>img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.searchResultContainer {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(213, 213, 213);
+}
+
+.cleanButton {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(213, 213, 213);
+}
