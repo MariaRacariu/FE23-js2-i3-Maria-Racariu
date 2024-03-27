@@ -1,14 +1,17 @@
 import { displayProducts } from "./displayProducts.ts";
 import { displaySearchResults } from "./displaySearchResults.ts";
+import { Product } from "./Product.ts";
 
-export function getData(type) {
+export function getData(type: string) {
     if (type === "display") {
         async function getProducts() {
             const url = 'https://dummyjson.com/products';
 
             const res = await fetch(url);
             const productsResponse = await res.json();
-            const products = productsResponse.products;
+            const products: Product[] = productsResponse.products;
+
+            console.log(products);
             displayProducts(products);
         }
         getProducts();
@@ -21,7 +24,7 @@ export function getData(type) {
 
             const res = await fetch(url);
             const searchResponse = await res.json();
-            const searchResult = searchResponse.products;
+            const searchResult: (string[] | number[]) = searchResponse.products;
             displaySearchResults(searchResult);
         }
         getSearchResults();

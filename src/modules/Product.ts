@@ -3,8 +3,8 @@ export class Product {
         readonly images: string,
         readonly title: string,
         readonly description: string,
-        readonly rating: number,
-        readonly stock: number,
+        readonly rating: string,
+        readonly stock: string,
         readonly category: string,
     ) {
         this.images = images;
@@ -13,12 +13,5 @@ export class Product {
         this.rating = rating;
         this.stock = stock;
         this.category = category;
-        this.createButton();
-    }
-
-    public createButton() {
-        // console.log("Hello")
-        // const button = document.createElement("button");
-        // card.append(button);
     }
 }

@@ -1,6 +1,6 @@
 import { Product } from "./Product.ts";
 
-export function displayProducts(products): void {
+export function displayProducts(products: Product[]) {
     const container = document.querySelector('#productsContainer') as HTMLDivElement;
     products.forEach(item => {
         const productTest = new Product(item.images, item.title, item.description, item.rating, item.stock, item.category);

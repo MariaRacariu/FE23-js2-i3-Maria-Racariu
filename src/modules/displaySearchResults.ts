@@ -1,4 +1,4 @@
-export function displaySearchResults(results) {
+export function displaySearchResults(results: string[] | number[]) {
     const searchResultContainer = document.querySelector('#searchResultContainer') as HTMLDivElement;
     searchResultContainer.innerHTML = "";
 
