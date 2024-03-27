@@ -11,7 +11,6 @@ export function getData(type: string) {
             const productsResponse = await res.json();
             const products: Product[] = productsResponse.products;
 
-            console.log(products);
             displayProducts(products);
         }
         getProducts();
